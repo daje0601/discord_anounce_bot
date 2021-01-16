@@ -4,7 +4,7 @@ exports.handler = async (event) => {
     // TODO implement
 
     try {
-        const result = await axios.post("https://discord.com/api/webhooks/799781395618332722/edTeM3MPp8AQfIcLFAG0YPmisjEo3U_z5Rwx1NUCZdbKWsk86NTGgRevoFjoTLhmQRhy", {
+        const result = await axios.post("https://discord.com/api/webhooks/799927274471948288/3mbWRbH2cQ9O3i_SN3pph68eFI4CP2yeUisntdYbJNGvf8ePU1YMUk-rSgyGniiLFIU9", {
             "content":"PM 16시 30분부터 17시까지 질문있으신 분들은 질문 제출하여 주시기 바랍니다."
         });
         console.info("디스코드 웹훅 성공");
@@ -19,9 +19,3 @@ exports.handler = async (event) => {
     return response;
 }; 
 
-exports.handler = async function(event, context) {
-    console.log("ENVIRONMENT VARIABLES\n" + JSON.stringify(process.env, null, 2))
-    console.info("EVENT\n" + JSON.stringify(event, null, 2))
-    console.warn("Event not processed.")
-    return context.logStreamName
-  }
