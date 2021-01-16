@@ -5,7 +5,7 @@ exports.handler = async (event) => {
 
     try {
         const result = await axios.post("https://discord.com/api/webhooks/799781395618332722/edTeM3MPp8AQfIcLFAG0YPmisjEo3U_z5Rwx1NUCZdbKWsk86NTGgRevoFjoTLhmQRhy", {
-            "content":"9시까지 모두 로그인 하시기 바랍니다."
+            "content":"PM 16시 30분부터 17시까지 질문있으신 분들은 질문 제출하여 주시기 바랍니다."
         });
         console.info("디스코드 웹훅 성공");
     }
